@@ -4,7 +4,7 @@
 
 import { Inject, Injectable, Optional, InjectionToken } from '@angular/core';
 import { DateTimeAdapter, OWL_DATE_TIME_LOCALE } from '@danielmoncada/angular-datetime-picker';
-import * as dayjs from 'dayjs';
+import dayjs from 'dayjs';
 import * as localData from 'dayjs/plugin/localeData';
 import * as LocalizedFormat from 'dayjs/plugin/localizedFormat';
 
@@ -91,7 +91,7 @@ export class DayjsDateTimeAdapter extends DateTimeAdapter<dayjs.Dayjs> {
     public getMonth(date: dayjs.Dayjs): number {
         return this.clone(date).month();
     }
-    
+
     public getDay(date: dayjs.Dayjs): number {
         return this.clone(date).day();
     }
@@ -198,9 +198,9 @@ export class DayjsDateTimeAdapter extends DateTimeAdapter<dayjs.Dayjs> {
     }
 
     public createDate(year: number, month: number, date: number): dayjs.Dayjs;
-    public createDate( year: number, month: number, date: number, 
-        hours: number = 0, 
-        minutes: number = 0, 
+    public createDate( year: number, month: number, date: number,
+        hours: number = 0,
+        minutes: number = 0,
         seconds: number = 0): dayjs.Dayjs {
         if (month < 0 || month > 11) {
             throw Error(

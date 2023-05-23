@@ -26,5 +26,8 @@
         "dist/picker/*"
       ]
     }
-  }
+  },
+    "angularCompilerOptions": {
+        "compilationMode": "partial"
+    }
 }
