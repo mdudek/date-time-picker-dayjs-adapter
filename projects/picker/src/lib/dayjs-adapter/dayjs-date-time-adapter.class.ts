@@ -47,7 +47,7 @@ function range<T>(length: number, valueFunction: (index: number) => T): T[] {
 @Injectable()
 export class DayjsDateTimeAdapter extends DateTimeAdapter<dayjs.Dayjs> {
 
-    private _localeData?: {
+    private _localeData!: {
         longMonths: string[];
         shortMonths: string[];
         longDaysOfWeek: string[];
