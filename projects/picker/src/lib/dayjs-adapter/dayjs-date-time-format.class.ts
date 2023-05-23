@@ -11,4 +11,4 @@ export const OWL_DAYJS_DATE_TIME_FORMATS: OwlDateTimeFormats = {
     monthYearLabel: 'MMM YYYY',
     dateA11yLabel: 'LL',
     monthYearA11yLabel: 'MMMM YYYY'
-};
+}
